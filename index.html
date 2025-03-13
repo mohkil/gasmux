@@ -10,11 +10,14 @@
     <pre id="jsonResponse"></pre>
 
     <script>
-        // Simulate the JSON response on page load
+        // Simulate a JSON response on page load
         window.onload = function() {
-            const response = { response: "enabled" }; // The JSON you want to send
+            // Create the JSON object
+            const response = {
+                "response": "enable"
+            };
 
-            // Display the JSON response in the <pre> tag
+            // Display the JSON response in a <pre> tag (formatted for better readability)
             document.getElementById('jsonResponse').textContent = JSON.stringify(response, null, 2);
         };
     </script>
