@@ -1,1 +1,22 @@
-{"response": "enable"}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Response on Load</title>
+</head>
+<body>
+    <h2>JSON Response:</h2>
+    <pre id="jsonResponse"></pre>
+
+    <script>
+        // Simulate the JSON response on page load
+        window.onload = function() {
+            const response = { response: "enable" }; // The JSON you want to send
+
+            // Display the JSON response in the <pre> tag
+            document.getElementById('jsonResponse').textContent = JSON.stringify(response, null, 2);
+        };
+    </script>
+</body>
+</html>
